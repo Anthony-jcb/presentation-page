@@ -1,0 +1,22 @@
+{
+  "name": "presentation-page",
+  "version": "1.0.0",
+  "description": "Anthony's Cedeño presentation page, see my contact, work, projects and trayectory.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/index.js"
+  },
+  "keywords": [
+    "contact",
+    "presentation",
+    "work",
+    "projects",
+    "trayectory"
+  ],
+  "author": "Anthony-jcb",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mysql": "^2.18.1"
+  }
+}
