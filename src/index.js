@@ -1,5 +1,13 @@
+const path = require("path");
 const app = require("./config/server");
-const router = require("./views/routes");
+const routes = require("./views/routes/routes");
+
+// Settings
+app.set("port", process.env.PORT || 5500);
+app.set("views", path.join(__dirname, "views"));
+
+// Routes
+app.use(routes);
 
 // Server initialization.
 app.listen(app.get("port"), () => {
