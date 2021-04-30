@@ -5,6 +5,7 @@ const routes = require("./views/routes/routes");
 // Settings
 app.set("port", process.env.PORT || 5500);
 app.set("views", path.join(__dirname, "views"));
+app.set("view engine", "ejs");
 
 // Routes
 app.use(routes);
