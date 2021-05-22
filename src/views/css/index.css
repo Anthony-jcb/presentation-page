@@ -16,7 +16,7 @@
 
 .nav_brand span {
   font-size: 1.5rem;
-  color: rgb(32, 32, 32);
+  color: rgb(255, 255, 255);
 }
 
 .nav_options {
@@ -56,36 +56,11 @@
   justify-content: center;
   align-items: flex-end;
   width: 100%;
-  height: 720px;
-  background-image: url(./perfil.JPG);
+  height: 100vh;
+  background-image: url(./back.jpg);
   background-size: cover;
-  background-position: center;
+  background-position: top;
   background-repeat: no-repeat;
-}
-
-.header_img_comment {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  width: 100%;
-  padding: 10px;
-  background-color: rgba(0, 0, 0, 0.5);
-  color: rgba(255, 255, 255, .9);
-  font-family: 'Roboto Mono';
-}
-
-.header_img_comment :nth-child(3) {
-  font-size: 12px;
-}
-
-.header_img_comment hr {
-  width: 50%;
-  border-width: 1px;
-  border-radius: 1px;
-  border-style: solid;
-  color: rgba(255, 255, 255, 0.2);
-  margin-block-start: .2rem;
-  margin-block-end: .2rem;
 }
 
 .sticky {
@@ -113,9 +88,5 @@
     margin: 0px 0px;
     width: 100%;
     border-radius: 0px;
-  }
-
-  .header_img_comment {
-    padding: 0;
   }
 }
