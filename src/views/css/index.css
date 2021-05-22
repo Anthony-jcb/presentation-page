@@ -3,6 +3,7 @@
   width: 100%;
   position: absolute;
   background: none 000711;
+  transition: all .2s;
 }
 
 .nav_container {
@@ -69,6 +70,7 @@
   border-bottom: #dadce0;
   border-bottom-width: 1px;
   border-bottom-style: solid;
+  transition: all .2s;
 }
 
 .sticky_option {
