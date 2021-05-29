@@ -1,6 +1,46 @@
+@import url('ttps://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;800&display=swap');
 /* Custom properties */
 :root {
-  --black-color: rgb(32, 32, 32);
+  --white-color: rgb(253, 250, 246);
+  --black-color: rgb(70, 72, 75);
+  --max-image-height: 100vh;
+  --default-text-size: 1rem;
+  --font: "Nunito Sans", Serif;
+  --font-regular-weight: 400;
+  --font-bold-weight: 900;
+}
+
+body {
+  background-color: #fdfaf6;
+}
+
+/* Utilities*/
+
+small {
+  font-size: .85rem;
+}
+p {
+  font-size: 1rem;
+}
+h5 {
+  margin: 0;
+  font-size: 1.25rem;
+}
+h4 {
+  margin: 0;
+  font-size: 1.56rem;
+}
+h3 {
+  margin: 0;
+  font-size: 1.95rem;
+}
+h2 {
+  margin: 0;
+  font-size: 2.44rem;
+}
+h1 {
+  margin: 0;
+  font-size: 3rem;
 }
 
 /* Configuration */
@@ -8,8 +48,9 @@
   top: 0;
   width: 100%;
   position: absolute;
-  background: none 000711;
-  transition: all .2s;
+  background: none;
+  z-index: 999;
+  transition: all 0.2s;
 }
 
 .nav_container {
@@ -18,12 +59,12 @@
   margin: 0rem 1rem;
   align-items: center;
   justify-content: space-between;
-  font-family: 'Roboto Mono', serif;
+  font-family: var(--font);
+  font-weight: var(--font-bold-weight);
 }
 
-.nav_brand span {
-  font-size: 1.5rem;
-  color: rgb(255, 255, 255);
+.nav_brand{
+  color: var(--white-color);
 }
 
 .nav_options {
@@ -35,49 +76,51 @@
   flex-wrap: wrap;
   list-style: none;
   padding-inline-start: 0px;
-  color: white;
+  color: var(--white-color);
 }
 
 .nav_options_container > li {
+  font-size: var(--default-text-size);
+  font-weight: var(--font-bold-weight);
   padding: 0rem 1rem;
 }
 
 .header_img {
   display: flex;
-  justify-content: center;
   width: 100%;
   height: auto;
-  overflow: hidden;
+  justify-content: center;
+  align-items: center;
 }
 
 .header_img > img {
   width: 100%;
   height: auto;
+  max-height: var(--max-image-height);
+  object-fit:cover;
+  object-position: top;
 }
 
 .header_text_container {
+  position: absolute;
   display: flex;
   flex-wrap: wrap;
 }
 
 .header_text {
-  font-family: 'Hind', serif;
-  font-weight: bold;
-  font-size: 30px;
-  color: rgb(32, 32, 32);
+  font-family: var(--font);
+  color: var(--black-color);
 }
 
 .sticky {
   position: fixed;
-  background-color: white;
-  border-bottom: #dadce0;
-  border-bottom-width: 1px;
-  border-bottom-style: solid;
+  background-color: var(--white-color);
   transition: all .2s;
 }
 
 .sticky_option {
-  color: rgb(32, 32, 32);
+  color: rgb(70, 72, 75);
+  transition: all .5s;
 }
 
 @media (max-width: 500px) {
