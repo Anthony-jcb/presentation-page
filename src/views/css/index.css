@@ -1,6 +1,7 @@
-@import url('ttps://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;800&display=swap');
 /* Custom properties */
 :root {
+  --primary-color: rgb(50, 130, 184);
   --white-color: rgb(253, 250, 246);
   --black-color: rgb(70, 72, 75);
   --max-image-height: 100vh;
@@ -10,11 +11,12 @@
   --font-bold-weight: 900;
 }
 
-body {
-  background-color: #fdfaf6;
-}
-
 /* Utilities*/
+
+hr {
+  border-style: solid;
+  border-color: rgb(180, 180, 180);
+}
 
 small {
   font-size: .85rem;
@@ -56,7 +58,7 @@ h1 {
 .nav_container {
   display: flex;
   height: 3rem;
-  margin: 0rem 1rem;
+  margin: 0rem 5rem;
   align-items: center;
   justify-content: space-between;
   font-family: var(--font);
@@ -82,7 +84,7 @@ h1 {
 .nav_options_container > li {
   font-size: var(--default-text-size);
   font-weight: var(--font-bold-weight);
-  padding: 0rem 1rem;
+  padding: 0rem 1.5rem;
 }
 
 .header_img {
@@ -90,7 +92,7 @@ h1 {
   width: 100%;
   height: auto;
   justify-content: center;
-  align-items: center;
+  align-items: flex-end;
 }
 
 .header_img > img {
@@ -104,22 +106,55 @@ h1 {
 .header_text_container {
   position: absolute;
   display: flex;
-  flex-wrap: wrap;
 }
 
 .header_text {
   font-family: var(--font);
+  color: var(--white-color);
+}
+
+.little-spacer {
+  margin: 100px 0;
+}
+
+.about { 
+  font-family: var(--font);
+  display: flex;
+  padding: 1rem 1rem;
+  justify-content: center;
+}
+
+.about-container {
+  max-width: 80ch;
+  line-height: 1.5;
+}
+
+.about-title {
+  color: rgb(32, 32, 32);
+  text-align: center;
+  text-decoration: underline;
+  text-decoration-color: var(--primary-color);
+}
+
+.about-content {
   color: var(--black-color);
+  font-size: 18px;
+  font-weight: var(--font-regular-weight);
 }
 
 .sticky {
   position: fixed;
   background-color: var(--white-color);
+  border-bottom: solid;
+  border-width: 1px;
+  border-color: rgb(202, 202, 202);
   transition: all .2s;
 }
 
 .sticky_option {
   color: rgb(70, 72, 75);
+  text-decoration: underline;
+  text-decoration-color: var(--primary-color);
   transition: all .5s;
 }
 
