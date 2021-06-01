@@ -1,8 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;800&display=swap");
 /* Custom properties */
 :root {
   --primary-color: rgb(50, 130, 184);
-  --white-color: rgb(253, 250, 246);
+  --white-color: rgb(255, 255, 255);
   --black-color: rgb(70, 72, 75);
   --max-image-height: 100vh;
   --default-text-size: 1rem;
@@ -11,15 +11,19 @@
   --font-bold-weight: 900;
 }
 
-/* Utilities*/
+/* Imports */
+.material-icons-round.md-18 {
+  font-size: 18px;
+}
 
+/* Utilities*/
 hr {
   border-style: solid;
   border-color: rgb(180, 180, 180);
 }
 
 small {
-  font-size: .85rem;
+  font-size: 0.85rem;
 }
 p {
   font-size: 1rem;
@@ -45,19 +49,19 @@ h1 {
   font-size: 3rem;
 }
 
-/* Configuration */
+/*** Navigation bar ***/
 .nav {
   top: 0;
   width: 100%;
-  position: absolute;
-  background: none;
+  background: var(--white-color);
   z-index: 999;
+  border-bottom: 1px solid var(--white-color);
   transition: all 0.2s;
 }
 
 .nav_container {
   display: flex;
-  height: 3rem;
+  height: 49px;
   margin: 0rem 5rem;
   align-items: center;
   justify-content: space-between;
@@ -65,8 +69,8 @@ h1 {
   font-weight: var(--font-bold-weight);
 }
 
-.nav_brand{
-  color: var(--white-color);
+.nav_brand {
+  color: var(--black-color);
 }
 
 .nav_options {
@@ -78,29 +82,48 @@ h1 {
   flex-wrap: wrap;
   list-style: none;
   padding-inline-start: 0px;
-  color: var(--white-color);
+  color: var(--black-color);
 }
 
-.nav_options_container > li {
+.nav_options_container > div {
+  display: flex;
+  align-items: center;
   font-size: var(--default-text-size);
   font-weight: var(--font-bold-weight);
-  padding: 0rem 1.5rem;
+  margin: 0rem 0.7rem;
+  background-color: rgb(248, 248, 248);
+  border: 6px solid rgb(248, 248, 248);
+  border-radius: 25px;
+  cursor: pointer;
 }
 
+.nav_options_container span {
+  margin-right: 0.5rem;
+}
+
+.sticky {
+  position: sticky;
+  transition: all 0.3s;
+  border-bottom-color: rgb(225, 225, 225);
+}
+
+.sticky_option {
+  color: rgb(70, 72, 75);
+  text-decoration-color: var(--primary-color);
+  transition: all 0.5s;
+}
+
+/*** Page header ***/
 .header_img {
   display: flex;
-  width: 100%;
-  height: auto;
   justify-content: center;
   align-items: flex-end;
 }
 
 .header_img > img {
-  width: 100%;
-  height: auto;
-  max-height: var(--max-image-height);
-  object-fit:cover;
-  object-position: top;
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
 }
 
 .header_text_container {
@@ -114,10 +137,10 @@ h1 {
 }
 
 .little-spacer {
-  margin: 100px 0;
+  margin: 30px 0;
 }
 
-.about { 
+.about {
   font-family: var(--font);
   display: flex;
   padding: 1rem 1rem;
@@ -142,23 +165,7 @@ h1 {
   font-weight: var(--font-regular-weight);
 }
 
-.sticky {
-  position: fixed;
-  background-color: var(--white-color);
-  border-bottom: solid;
-  border-width: 1px;
-  border-color: rgb(202, 202, 202);
-  transition: all .2s;
-}
-
-.sticky_option {
-  color: rgb(70, 72, 75);
-  text-decoration: underline;
-  text-decoration-color: var(--primary-color);
-  transition: all .5s;
-}
-
-@media (max-width: 500px) {
+@media screen and(min-width: 1024px) {
   .text {
     display: none;
   }
