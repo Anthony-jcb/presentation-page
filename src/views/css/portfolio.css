@@ -9,6 +9,7 @@
   --font: "Nunito Sans", Serif;
   --font-regular-weight: 400;
   --font-bold-weight: 900;
+  --parraf-width: 73ch;
 }
 
 /* Imports */
@@ -91,7 +92,7 @@ h1 {
   flex-wrap: wrap;
   list-style: none;
   padding-inline-start: 0px;
-  color:var(--black-color);
+  color: var(--black-color);
 }
 
 .nav_options_container > div {
@@ -131,52 +132,33 @@ h1 {
   transition: all 0.5s;
 }
 
-/*** Header section ***/
-.header_img {
+/*** Portfolio section ***/
+.portfolio {
   display: flex;
-  justify-content: center;
-  align-items: flex-end;
+  margin: 0 5rem;
 }
 
-.header_img > img {
-  width: 10rem;
-  height: 10rem;
-  border-radius: 50%;
-}
-
-.header_text_container {
-  position: absolute;
-  display: flex;
-}
-
-.header_text {
+.description {
+  line-height: 1.5rem;
   font-family: var(--font);
-  color: var(--white-color);
+  color: var(--black-color);
 }
 
-/*** About section ***/
-
-.about {
-  font-family: var(--font);
-  display: flex;
-  padding: 1rem 1rem;
-  justify-content: center;
-}
-
-.about-container {
-  max-width: 80ch;
-  line-height: 1.5;
-}
-
-.about-title {
-  color: rgb(32, 32, 32);
-  text-align: center;
+.description h2 {
   text-decoration: underline;
   text-decoration-color: var(--primary-color);
+  width: var(--parraf-width);
 }
 
-.about-content {
-  color: var(--black-color);
-  font-size: 18px;
-  font-weight: var(--font-regular-weight);
+.description p {
+  width: var(--parraf-width);
+}
+
+.img_container {
+  width: var(--parraf-width);
+  height: auto;
+}
+
+.img_container img {
+  width: 100%;
 }
