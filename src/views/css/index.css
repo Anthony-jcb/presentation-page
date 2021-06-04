@@ -3,6 +3,7 @@
   --primary-color: rgb(50, 130, 184);
   --white-color: rgb(255, 255, 255);
   --black-color: rgb(70, 72, 75);
+  --header-elements-background: rgb(248, 248, 248);
   --max-image-height: 100vh;
   --default-text-size: 1rem;
   --font: "Nunito Sans", sans-serif;
@@ -53,6 +54,8 @@ h1 {
   font-size: 3rem;
 }
 
+/*** Components ***/
+
 /*** Utilities***/
 .material-icons-round {
   font-size: 18px;
@@ -69,6 +72,10 @@ h1 {
   margin: 30px 0;
 }
 
+.none {
+  display: none;
+}
+
 /** __Site styles__ **/
 
 /*** Navigation bar ***/
@@ -82,7 +89,7 @@ h1 {
   transition: all 0.2s;
 }
 
-.container {
+.header > .container {
   display: flex;
   height: 49px;
   margin: 0rem 5rem;
@@ -104,6 +111,7 @@ h1 {
   padding-inline-start: 0px;
   color: var(--black-color);
 }
+
 .menu a {
   display: flex;
   height: 2rem;
@@ -113,8 +121,8 @@ h1 {
   font-size: var(--default-text-size);
   font-weight: var(--font-bold-weight);
   cursor: pointer;
-  background-color: rgb(248, 248, 248);
-  border: 1px solid rgb(248, 248, 248);
+  background-color: var(--header-elements-background);
+  border: 1px solid var(--header-elements-background);
   border-radius: 25px;
   transition-property: border-color;
   transition-duration: 0.2s;
@@ -134,6 +142,18 @@ h1 {
 .sticky {
   transition: all 0.3s;
   border-bottom-color: rgb(225, 225, 225);
+}
+
+@media screen and (max-width: 1024px) {
+  .menu {
+    display: none;
+  }
+
+  .menu_btn {
+    border: 5px;
+    cursor: pointer;
+    background-color: var(--header-elements-background);
+  }
 }
 
 /*** Profile section ***/
