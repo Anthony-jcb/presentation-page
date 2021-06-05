@@ -145,13 +145,10 @@ h1 {
 }
 
 @media screen and (max-width: 1024px) {
-  .menu {
-    display: none;
-  }
-
   .menu_btn {
     border: 5px;
     cursor: pointer;
+
     background-color: var(--header-elements-background);
   }
 }
@@ -186,6 +183,7 @@ h1 {
 
 .section_content > p {
   max-width: var(--parraf-width);
+  margin: 0;
   margin: 1rem 0;
 }
 
@@ -201,4 +199,24 @@ h1 {
 }
 .section_title::after {
   content: " >";
+}
+
+/*** Portfolio card ***/
+
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  border-radius: .5rem;
+  box-shadow: 0px 5px 15px 1px rgba(112, 81, 81, 0.15);
+}
+
+.card > h5 {
+  margin: .5rem 1rem;
+}
+
+.card img {
+  width: 100%;
+  border-radius: .5rem;
 }
