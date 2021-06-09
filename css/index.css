@@ -169,7 +169,7 @@ h1 {
 
 @media screen and (max-width: 952px) {
   .header > .container {
-    margin: 0 .5rem;
+    margin: 0 0.5rem;
   }
 
   .menu_btn {
@@ -183,10 +183,11 @@ h1 {
   }
 
   .menu > div {
-    width: calc(100% + .5rem);
+    width: calc(100% + 0.5rem);
     margin-left: -0.5rem;
   }
 
+  /* Ya trabajé en esto, no tengo que seguir haciendolo. */
   .menu {
     position: fixed;
     width: 100vw;
