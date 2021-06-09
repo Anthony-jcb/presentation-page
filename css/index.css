@@ -1,6 +1,6 @@
 /* Custom properties */
 :root {
-  --primary-color: rgb(50, 130, 184);
+  --primary-color: #b61f24;
   --white-color: rgb(255, 255, 255);
   --black-color: rgb(70, 72, 75);
   --header-elements-background: rgb(248, 248, 248);
@@ -68,6 +68,7 @@ h1 {
   direction: ltr;
   -webkit-font-smoothing: antialiased;
 }
+
 .little-spacer {
   margin: 30px 0;
 }
@@ -144,12 +145,54 @@ h1 {
   border-bottom-color: rgb(225, 225, 225);
 }
 
-@media screen and (max-width: 1024px) {
-  .menu_btn {
-    border: 5px;
-    cursor: pointer;
+.menu_btn {
+  display: none;
+  height: 2.5rem;
+  width: 2.5rem;
+  align-items: center;
+  justify-content: center;
+  border: 5px;
+  border-radius: 25px;
+  cursor: pointer;
+  background-color: var(--header-elements-background);
+}
 
-    background-color: var(--header-elements-background);
+.menu.show {
+  top: 50px;
+}
+
+@media screen and (max-width: 952px) {
+  .header_brand {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 952px) {
+  .header > .container {
+    margin: 0 .5rem;
+  }
+
+  .menu_btn {
+    display: inline-flex;
+  }
+
+  .menu a {
+    margin: 0 0;
+    border-radius: 0px;
+    height: 3.5rem;
+  }
+
+  .menu > div {
+    width: calc(100% + .5rem);
+    margin-left: -0.5rem;
+  }
+
+  .menu {
+    position: fixed;
+    width: 100vw;
+    top: -100vh;
+    flex-direction: column;
+    box-shadow: 0px 10px 25px 1px rgba(0, 0, 0, 0.08);
   }
 }
 
@@ -208,15 +251,15 @@ h1 {
   flex-direction: column;
   width: 100%;
   justify-content: center;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
   box-shadow: 0px 5px 15px 1px rgba(112, 81, 81, 0.15);
 }
 
 .card > h5 {
-  margin: .5rem 1rem;
+  margin: 0.5rem 1rem;
 }
 
 .card img {
   width: 100%;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
 }
