@@ -215,6 +215,7 @@ h1 {
   display: flex;
   justify-content: center;
   margin: 2rem 0;
+  scroll-margin-top: 3rem;
   font-family: var(--font);
 }
 
