@@ -6,9 +6,9 @@
   --header-elements-background: rgb(248, 248, 248);
   --max-image-height: 100vh;
   --default-text-size: 1rem;
-  --font: "Nunito Sans", sans-serif;
+  --font: 'Nunito Sans', sans-serif;
   --font-regular-weight: 400;
-  --font-bold-weight: 900;
+  --font-bold-weight: 800;
   --parraf-width: 75ch;
 }
 
