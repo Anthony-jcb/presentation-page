@@ -90,7 +90,7 @@ h1 {
   display: flex;
   flex-wrap: wrap;
   list-style: none;
-  padding-right: 10rem;
+  padding-right: 5rem;
   color: var(--black-color);
   font-family: var(--font);
   font-weight: var(--font-bold-weight);
@@ -194,7 +194,6 @@ h1 {
 /*** Section ***/
 .section_container {
   display: flex;
-  justify-content: center;
   margin: 2rem 0;
   scroll-margin-top: 3rem;
   font-family: var(--font);
