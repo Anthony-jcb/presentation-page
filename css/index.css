@@ -73,46 +73,27 @@ h1 {
   margin: 2rem 0;
 }
 
-.none {
-  display: none;
-}
-
 /** __Site styles__ **/
 
 /*** Navigation bar ***/
 .header {
-  position: sticky;
-  top: 0;
   width: 100%;
-  background: var(--white-color);
-  z-index: 999;
-  border-bottom: 1px solid var(--white-color);
-  transition: all 0.2s;
-}
-
-.header > .container {
+  height: 50px;
   display: flex;
-  height: 49px;
-  margin: 0rem 5rem;
-  align-items: center;
-  justify-content: space-between;
-  font-family: var(--font);
-  font-weight: var(--font-bold-weight);
-}
-
-.header_brand {
-  color: var(--black-color);
-  font-family: var(--font);
-  font-weight: var(--font-bold-weight);
-  font-size: 1.56rem;
+  align-items: flex-end;
+  justify-content: flex-end;
+  background: transparent;
+  overflow: hidden;
 }
 
 .menu {
   display: flex;
   flex-wrap: wrap;
   list-style: none;
-  padding-inline-start: 0px;
+  padding-right: 10rem;
   color: var(--black-color);
+  font-family: var(--font);
+  font-weight: var(--font-bold-weight);
 }
 
 .menu a {
@@ -124,7 +105,6 @@ h1 {
   font-size: var(--default-text-size);
   font-weight: var(--font-bold-weight);
   cursor: pointer;
-  background-color: var(--header-elements-background);
   border: 1px solid var(--header-elements-background);
   border-radius: 25px;
   transition-property: border-color;
@@ -140,11 +120,6 @@ h1 {
 .menu a > svg {
   margin-right: 0.3rem;
   fill: var(--black-color);
-}
-
-.sticky {
-  border-bottom-color: rgb(225, 225, 225);
-  transition: all 0.3s;
 }
 
 .menu_btn {
@@ -211,8 +186,8 @@ h1 {
 }
 
 .profile > img {
-  width: 10rem;
-  height: 10rem;
+  width: 15rem;
+  height: 15rem;
   border-radius: 50%;
 }
 
@@ -226,7 +201,7 @@ h1 {
 }
 
 .section_content {
-  max-width: 75ch;
+  max-width: 90vw;
   line-height: 1.5;
   color: var(--black-color);
   font-size: 18px;
@@ -240,7 +215,7 @@ h1 {
 .section_title {
   margin-bottom: 1rem;
   color: rgb(32, 32, 32);
-  text-align: center;
+  text-align: left;
   text-decoration: underline;
   text-decoration-color: var(--primary-color);
 }
