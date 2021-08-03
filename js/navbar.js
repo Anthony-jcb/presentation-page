@@ -1,0 +1,1 @@
+const $navbar=document.getElementById("nav"),$menu=document.querySelector(".menu"),$menu_btn=document.querySelector(".menu_btn"),$menu_elements=document.querySelectorAll("nav.menu a");function button_state(){$menu.classList.toggle("show")};$menu_btn.onclick=button_state,$menu_elements.forEach(e=>{e.addEventListener("click",button_state)});
