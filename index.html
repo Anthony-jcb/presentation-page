@@ -16,129 +16,100 @@
   </head>
 
   <body id="inicio">
-    <header class="header" id="nav">
-      <div class="header_content">
-        <h1>Anthony</h1>
-        <nav class="menu" id="menu_items">
-          <a href="#habilidades">
-            <svg
-              class="material-icons-round"
-              xmlns="http://www.w3.org/2000/svg"
-              height="18px"
-              viewBox="0 0 24 24"
-              width="18px"
-              fill="#000000"
-            >
-              <path d="M0 0h24v24H0V0z" fill="none" />
-              <path
-                d="M8.7 15.9L4.8 12l3.9-3.9c.39-.39.39-1.01 0-1.4-.39-.39-1.01-.39-1.4 0l-4.59 4.59c-.39.39-.39 1.02 0 1.41l4.59 4.6c.39.39 1.01.39 1.4 0 .39-.39.39-1.01 0-1.4zm6.6 0l3.9-3.9-3.9-3.9c-.39-.39-.39-1.01 0-1.4.39-.39 1.01-.39 1.4 0l4.59 4.59c.39.39.39 1.02 0 1.41l-4.59 4.6c-.39.39-1.01.39-1.4 0-.39-.39-.39-1.01 0-1.4z"
-              />
-            </svg>
-            Habilidades
-          </a>
-          <a href="#portafolio">
-            <svg
-              class="material-icons-round"
-              xmlns="http://www.w3.org/2000/svg"
-              enable-background="new 0 0 24 24"
-              height="18px"
-              viewBox="0 0 24 24"
-              width="18px"
-              fill="#000000"
-            >
-              <g>
-                <rect fill="none" height="24" width="24" />
-              </g>
-              <g>
+    <div class="welcome">
+      <section class="welcome_content">
+        <header class="header" id="nav">
+          <div class="header_content">
+            <a href="index.html">Anthony</a>
+            <nav class="menu" id="menu_items">
+              <a href="#habilidades"> Habilidades </a>
+              <a href="#portafolio"> Portafolio </a>
+              <a href="#contacto"> Contacto </a>
+            </nav>
+            <button class="menu_btn" id="menu_btn">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="18px"
+                viewBox="0 0 24 24"
+                width="18px"
+                fill="#000000"
+              >
+                <path d="M0 0h24v24H0V0z" fill="none" />
                 <path
-                  d="M18,5V3c0-1.1-0.9-2-2-2h-4c-1.1,0-2,0.9-2,2v2H7C5.9,5,5,5.9,5,7v9c0,1.1,0.9,2,2,2h14c1.1,0,2-0.9,2-2V7c0-1.1-0.9-2-2-2 H18z M16,5h-4V3h4V5z M2,9L2,9c-0.55,0-1,0.45-1,1v10c0,1.1,0.9,2,2,2h15c0.55,0,1-0.45,1-1v0c0-0.55-0.45-1-1-1H3V10 C3,9.45,2.55,9,2,9z"
+                  d="M4 18h16c.55 0 1-.45 1-1s-.45-1-1-1H4c-.55 0-1 .45-1 1s.45 1 1 1zm0-5h16c.55 0 1-.45 1-1s-.45-1-1-1H4c-.55 0-1 .45-1 1s.45 1 1 1zM3 7c0 .55.45 1 1 1h16c.55 0 1-.45 1-1s-.45-1-1-1H4c-.55 0-1 .45-1 1z"
                 />
-              </g>
-            </svg>
-            Portafolio
-          </a>
-          <a href="#contacto">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              height="18px"
-              viewBox="0 0 24 24"
-              width="18px"
-              fill="#000000"
-            >
-              <path d="M0 0h24v24H0V0z" fill="none" />
-              <path
-                d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm-.4 4.25l-7.07 4.42c-.32.2-.74.2-1.06 0L4.4 8.25c-.25-.16-.4-.43-.4-.72 0-.67.73-1.07 1.3-.72L12 11l6.7-4.19c.57-.35 1.3.05 1.3.72 0 .29-.15.56-.4.72z"
-              />
-            </svg>
-            Contacto
-          </a>
-        </nav>
-        <button class="menu_btn" id="menu_btn">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            height="18px"
-            viewBox="0 0 24 24"
-            width="18px"
-            fill="#000000"
-          >
-            <path d="M0 0h24v24H0V0z" fill="none" />
-            <path
-              d="M4 18h16c.55 0 1-.45 1-1s-.45-1-1-1H4c-.55 0-1 .45-1 1s.45 1 1 1zm0-5h16c.55 0 1-.45 1-1s-.45-1-1-1H4c-.55 0-1 .45-1 1s.45 1 1 1zM3 7c0 .55.45 1 1 1h16c.55 0 1-.45 1-1s-.45-1-1-1H4c-.55 0-1 .45-1 1z"
-            />
-          </svg>
-          <svg
-            class="none"
-            xmlns="http://www.w3.org/2000/svg"
-            height="18px"
-            viewBox="0 0 24 24"
-            width="18px"
-            fill="#000000"
-          >
-            <path d="M0 0h24v24H0V0z" fill="none" />
-            <path
-              d="M18.3 5.71c-.39-.39-1.02-.39-1.41 0L12 10.59 7.11 5.7c-.39-.39-1.02-.39-1.41 0-.39.39-.39 1.02 0 1.41L10.59 12 5.7 16.89c-.39.39-.39 1.02 0 1.41.39.39 1.02.39 1.41 0L12 13.41l4.89 4.89c.39.39 1.02.39 1.41 0 .39-.39.39-1.02 0-1.41L13.41 12l4.89-4.89c.38-.38.38-1.02 0-1.4z"
-            />
-          </svg>
-        </button>
+              </svg>
+              <svg
+                class="none"
+                xmlns="http://www.w3.org/2000/svg"
+                height="18px"
+                viewBox="0 0 24 24"
+                width="18px"
+                fill="#000000"
+              >
+                <path d="M0 0h24v24H0V0z" fill="none" />
+                <path
+                  d="M18.3 5.71c-.39-.39-1.02-.39-1.41 0L12 10.59 7.11 5.7c-.39-.39-1.02-.39-1.41 0-.39.39-.39 1.02 0 1.41L10.59 12 5.7 16.89c-.39.39-.39 1.02 0 1.41.39.39 1.02.39 1.41 0L12 13.41l4.89 4.89c.39.39 1.02.39 1.41 0 .39-.39.39-1.02 0-1.41L13.41 12l4.89-4.89c.38-.38.38-1.02 0-1.4z"
+                />
+              </svg>
+            </button>
+          </div>
+        </header>
+        <div class="welcome_main">
+          <div class="welcome_main_intro">
+            <h1>Hi, i'm Anthony Cedeño</h1>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil,
+              quae mollitia aliquid repellendus porro totam aut, enim pariatur
+              sapiente eum nisi ad vel magni eos. Atque repudiandae quaerat
+              asperiores nihil.
+            </p>
+          </div>
+          <div class="profile">
+            <img src="./css/assets/profile.png" alt="Anthony's profile" />
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <main>
+      <div class="section_container">
+        <section class="section_content">
+          <div class="content">
+            <div class="hero_image">
+              <img src="./css/assets/test1.jpg" alt="Programando" />
+            </div>
+            <div class="content_texto">
+              <h2 class="section_title">Acerca de mí</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet
+                blanditiis optio quam, similique cupiditate reiciendis
+                voluptatibus dignissimos facere assumenda repellendus ex porro
+                aliquam qui cum deserunt nobis, illo numquam laborum?
+              </p>
+            </div>
+          </div>
+        </section>
       </div>
-    </header>
 
-    <div class="section_container">
-      <section class="section_content">
-        <div class="content">
-          <div class="hero_image">
-            <img src="./css/assets/test1.jpg" alt="Programando" />
+      <div class="section_container" id="habilidades">
+        <section class="section_content">
+          <div class="content">
+            <div class="content_texto">
+              <h2 class="section_title">Habilidades</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet
+                blanditiis optio quam, similique cupiditate reiciendis
+                voluptatibus dignissimos facere assumenda repellendus ex porro
+                aliquam qui cum deserunt nobis, illo numquam laborum?
+              </p>
+            </div>
+            <div class="hero_image">
+              <img src="./css/assets/test2.jpg" alt="Programando" />
+            </div>
           </div>
-          <div class="content_texto">
-            <h2 class="section_title">Acerca de mí</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet
-              blanditiis optio quam, similique cupiditate reiciendis
-              voluptatibus dignissimos facere assumenda repellendus ex porro
-              aliquam qui cum deserunt nobis, illo numquam laborum?
-            </p>
-          </div>
-        </div>
-      </section>
-    </div>
-
-    <div class="section_container" id="habilidades">
-      <section class="section_content">
-        <div class="content">
-          <div class="content_texto">
-            <h2 class="section_title">Habilidades</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet
-              blanditiis optio quam, similique cupiditate reiciendis
-              voluptatibus dignissimos facere assumenda repellendus ex porro
-              aliquam qui cum deserunt nobis, illo numquam laborum?
-            </p>
-          </div>
-          <div class="hero_image">
-            <img src="./css/assets/test2.jpg" alt="Programando" />
-          </div>
-        </div>
-      </section>
-    </div>
+        </section>
+      </div>
+    </main>
   </body>
 </html>
