@@ -1,0 +1,19 @@
+$primary-color: #b61f24;
+$white-color: rgb(255, 255, 255);
+$black-color: rgb(70, 72, 75);
+$header-elements-background: rgb(248, 248, 248);
+$max-image-height: 100vh;
+$default-text-size: 1rem;
+$font: "Nunito Sans", "sans-serif";
+$big-font: "Jost", sans-serif;
+$font-regular-weight: 400;
+$font-bold-weight: 800;
+$parraf-width: 75ch;
+
+@import '__normalize';
+@import '__resets';
+@import '__assets';
+@import '__header';
+@import '__welcome';
+@import '__section';
+@import '__hero_image';

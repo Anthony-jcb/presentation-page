@@ -12,5 +12,9 @@
   ],
   "author": "Anthony-jcb <thonyjbc@gmail.com>",
   "repository": "https://github.com/Anthony-jcb/presentation-page.git",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^@4.4.3",
+    "sass": "^@1.42.1"
+  }
 }
