@@ -18,6 +18,11 @@ html {
   scroll-behavior: smooth;
 }
 
+#inicio {
+  margin: auto;
+  max-width: 1366px;
+}
+
 a {
   text-decoration: none;
   color: inherit;
