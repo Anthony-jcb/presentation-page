@@ -1,4 +1,3 @@
-/*** Section ***/
 .section_container {
   display: flex;
   align-items: center;
@@ -19,6 +18,7 @@
 .content {
   display: flex;
   justify-content: center;
+  font-weight: 400;
 }
 
 .content_texto {
@@ -30,15 +30,14 @@
 }
 
 .content_texto p {
-  font-family: "Nunito Sans", sans-serif;
-  font-size: 1.2rem;
-  font-weight: 400;
+  font-family: $font;
+  font-size: $default-text-size;
   max-width: 95%;
 }
 
 .section_title {
-  color: rgb(32, 32, 32);
-  text-decoration-color: $primary-color;
+  color: $gray-color;
+  font-weight: $font-bold-weight
 }
 
 @media screen and (max-width: 952px) {
@@ -56,18 +55,4 @@
     width: 100%;
     padding: 0 0;
   }
-}
-
-.profile {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 200px;
-  height: auto;
-}
-
-.profile img {
-  width: 100%;
-  object-fit: contain;
-  border-radius: 50%;
 }

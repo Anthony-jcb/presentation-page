@@ -1,13 +1,14 @@
-$primary-color: #b61f24;
-$white-color: rgb(255, 255, 255);
-$black-color: rgb(70, 72, 75);
+$primary-color: #1f6db6;
+$white-color: rgb(243, 244, 245);
+$black-color: rgb(50, 50, 50);
+$gray-color: rgb(59, 59, 59);
 $header-elements-background: rgb(248, 248, 248);
 $max-image-height: 100vh;
 $default-text-size: 1rem;
-$font: "Nunito Sans", "sans-serif";
-$big-font: "Jost", sans-serif;
-$font-regular-weight: 400;
-$font-bold-weight: 800;
+$font: 'Poppins', sans-serif;
+$big-font: 'Poppins', sans-serif;
+$font-regular-weight: 500;
+$font-bold-weight: 600;
 $parraf-width: 75ch;
 
 @import '__normalize';
@@ -15,5 +16,5 @@ $parraf-width: 75ch;
 @import '__assets';
 @import '__header';
 @import '__welcome';
-@import '__section';
 @import '__hero_image';
+@import '__section';
