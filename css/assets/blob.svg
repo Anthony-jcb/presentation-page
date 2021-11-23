@@ -9,10 +9,107 @@
    height="132"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:svg="http://www.w3.org/2000/svg">
   <defs
-     id="defs8" />
+     id="defs8">
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient855">
+      <stop
+         style="stop-color:#1f6db6;stop-opacity:1"
+         offset="0"
+         id="stop851" />
+      <stop
+         style="stop-color:#39a8d9;stop-opacity:1;"
+         offset="0.60432392"
+         id="stop1661" />
+      <stop
+         style="stop-color:#55e7ff;stop-opacity:1"
+         offset="1"
+         id="stop853" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient855"
+       id="linearGradient857"
+       x1="1.1264111"
+       y1="77.640549"
+       x2="126.90602"
+       y2="30.755217"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.96153848,0,0,0.96153849,2.5384615,2.5384615)" />
+    <filter
+       style="color-interpolation-filters:sRGB;"
+       inkscape:label="Drop Shadow"
+       id="filter6006"
+       x="-0.15360001"
+       y="-0.15360001"
+       width="1.3072"
+       height="1.3072">
+      <feFlood
+         flood-opacity="0.164706"
+         flood-color="rgb(0,0,0)"
+         result="flood"
+         id="feFlood5996" />
+      <feComposite
+         in="flood"
+         in2="SourceGraphic"
+         operator="in"
+         result="composite1"
+         id="feComposite5998" />
+      <feGaussianBlur
+         in="composite1"
+         stdDeviation="4"
+         result="blur"
+         id="feGaussianBlur6000" />
+      <feOffset
+         dx="0"
+         dy="0"
+         result="offset"
+         id="feOffset6002" />
+      <feComposite
+         in="SourceGraphic"
+         in2="offset"
+         operator="over"
+         result="fbSourceGraphic"
+         id="feComposite6004" />
+      <feColorMatrix
+         result="fbSourceGraphicAlpha"
+         in="fbSourceGraphic"
+         values="0 0 0 -1 0 0 0 0 -1 0 0 0 0 -1 0 0 0 0 1 0"
+         id="feColorMatrix6026" />
+      <feFlood
+         id="feFlood6028"
+         flood-opacity="0.164706"
+         flood-color="rgb(0,0,0)"
+         result="flood"
+         in="fbSourceGraphic" />
+      <feComposite
+         in2="fbSourceGraphic"
+         id="feComposite6030"
+         in="flood"
+         operator="in"
+         result="composite1" />
+      <feGaussianBlur
+         id="feGaussianBlur6032"
+         in="composite1"
+         stdDeviation="4"
+         result="blur" />
+      <feOffset
+         id="feOffset6034"
+         dx="0"
+         dy="0"
+         result="offset" />
+      <feComposite
+         in2="offset"
+         id="feComposite6036"
+         in="fbSourceGraphic"
+         operator="over"
+         result="composite2" />
+    </filter>
+  </defs>
   <sodipodi:namedview
      id="namedview6"
      pagecolor="#505050"
@@ -23,8 +120,8 @@
      inkscape:pagecheckerboard="0"
      showgrid="false"
      inkscape:zoom="3.9244426"
-     inkscape:cx="53.765597"
-     inkscape:cy="72.494371"
+     inkscape:cx="124.60368"
+     inkscape:cy="66.633667"
      inkscape:window-width="1440"
      inkscape:window-height="852"
      inkscape:window-x="0"
@@ -34,7 +131,7 @@
      width="132px" />
   <path
      fill="#0f62fe"
-     d="m 111.8455,27.66968 c 9.71562,10.778585 16.46542,23.04046 18.51081,37.280061 2.04539,14.23959 -0.61362,30.358026 -10.43151,43.015449 -9.71561,12.55853 -26.385571,21.45828 -44.589571,22.84268 -18.203998,1.38441 -37.839774,-4.74653 -51.64618,-17.30506 C 9.8826444,100.94427 1.9056104,81.958141 1.0874534,62.180931 0.1670263,42.304822 6.5077454,21.736515 20.31415,10.859044 34.120556,0.0804594 55.392646,-0.90840159 72.471679,3.3437005 89.448439,7.4969165 102.12988,16.891096 111.8455,27.66968 Z"
+     d="m 110.08221,29.143924 c 9.34195,10.364024 15.83214,22.154289 17.79886,35.846213 1.96672,13.691914 -0.59002,29.190411 -10.0303,41.361013 -9.34193,12.07551 -25.370741,20.63296 -42.874587,21.96411 C 57.472338,129.64643 38.591784,123.75129 25.316394,111.67578 12.041004,99.600262 4.3707792,81.344369 3.5840898,62.32782 2.6990637,43.216176 8.7959091,23.438957 22.071298,12.97985 35.346689,2.6158263 55.800622,1.6649984 72.222769,5.7535582 88.546577,9.7470353 100.74027,18.7799 110.08221,29.143924 Z"
      id="path2"
-     style="stroke-width:1.00563" />
+     style="fill:url(#linearGradient857);fill-opacity:1;stroke-width:0.966952" />
 </svg>
