@@ -17,43 +17,65 @@
   max-width: 94rem;
   height: 100%;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-around;
-  padding: 5rem 2rem;
   color: $gray-color;
 
-  h2 { font-size: 1rem; }
-}
+  @media screen and (max-width: $query-width) {
+    width: 80%;
+  }
 
-.welcome_main h1 {
-  font-family: $big-font;
-  font-weight: $font-bold-weight;
-  font-size: 2.5rem;
-}
+  h1 {
+    font-family: $big-font;
+    font-weight: $font-bold-weight;
+    font-size: 2.5rem;
+    width: 80%;
+  }
 
-.welcome_main p {
-  font-family: $font;
-  font-size: 1.2rem;
-  font-weight: 400;
-}
+  h2 {
+    font-size: 1rem;
+  }
 
-.welcome_main_intro {
-  width: 50%;
-  display: flex;
-  flex-direction: column;
-}
+  p {
+    font-family: $font;
+    font-size: 1.2rem;
+    font-weight: 400;
+  }
 
-.welcome_main_name {
-  color: $primary-color;
+  &_intro {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+
+    @media screen and (max-width: $query-width) {
+      width: 100%;
+      align-items: center;
+      text-align: center;
+    }
+
+    h2:before {
+      content: "< ";
+      color: $primary-color;
+    }
+    h2:after {
+      content: " />";
+      color: $primary-color;
+    }
+  }
+
+  &_name {
+    color: $primary-color;
+  }
 }
 
 .profile {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 400px;
-  height: 400px;
-  background: url('./assets/blob.svg');
+  width: 300px;
+  height: 300px;
+  background: url("./assets/blob.svg") no-repeat center/cover;
 
   & img {
     width: 0%;
