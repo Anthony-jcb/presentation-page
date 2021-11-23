@@ -1,19 +1,7 @@
-$primary-color: #1f6db6;
-$white-color: rgb(243, 244, 245);
-$black-color: rgb(50, 50, 50);
-$gray-color: rgb(59, 59, 59);
-$header-elements-background: rgb(248, 248, 248);
-$max-image-height: 100vh;
-$default-text-size: 1rem;
-$font: 'Poppins', sans-serif;
-$big-font: 'Poppins', sans-serif;
-$font-regular-weight: 500;
-$font-bold-weight: 600;
-$parraf-width: 75ch;
-$query-width: 952px;
-
 @import '__normalize';
 @import '__resets';
+@import '__variables';
+@import '__mixins';
 @import '__assets';
 @import '__header';
 @import '__welcome';
