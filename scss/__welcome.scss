@@ -1,3 +1,5 @@
+@use "__mixins" as mixins;
+
 .welcome {
   width: 100%;
   height: 100vh;
@@ -57,15 +59,17 @@
     h2:before {
       content: "< ";
       color: $primary-color;
+      @include mixins.gradient;
     }
     h2:after {
       content: " />";
       color: $primary-color;
+      @include mixins.gradient;
     }
   }
 
   &_name {
-    color: $primary-color;
+    @include mixins.gradient;
   }
 }
 

@@ -25,7 +25,7 @@
   align-items: center;
   justify-content: center;
   margin: 2rem 2rem;
-  scroll-margin-top: 3rem;
+  scroll-margin-top: 1.8rem;
   font-family: $big-font;
 }
 
@@ -55,20 +55,28 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-}
 
-.content_texto p {
-  font-family: $font;
-  font-size: $default-text-size;
-  max-width: 95%;
+  p {
+    font-family: $font;
+    font-size: $default-text-size;
+    max-width: 95%;
+  }
+
+  @media screen and (max-width: $query-width) {
+    text-align: center;
+  }
 }
 
 .section_title {
   color: $gray-color;
   font-weight: $font-bold-weight;
+
+  @media screen and (max-width: $query-width) {
+    text-align: center;
+  }
 }
 
-@media screen and (max-width: 952px) {
+@media screen and (max-width: $query-width) {
   .section_container {
     margin: 1rem 0;
   }
