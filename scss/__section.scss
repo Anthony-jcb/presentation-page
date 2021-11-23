@@ -1,3 +1,25 @@
+.sections {
+  @for $i from 1 through 4 {
+    @if $i % 2 == 0 {
+      .section_container:nth-child(#{$i}) .content {
+        flex-direction: row-reverse;
+
+        @media screen and (max-width: $query-width) {
+          flex-direction: column;
+        }
+      }
+    } @else {
+      .section_container:nth-child(#{$i}) .content {
+        flex-direction: row;
+
+        @media screen and (max-width: $query-width) {
+          flex-direction: column;
+        }
+      }
+    }
+  }
+}
+
 .section_container {
   display: flex;
   align-items: center;
@@ -19,6 +41,12 @@
   display: flex;
   justify-content: center;
   font-weight: 400;
+
+  @media screen and (max-width: $query-width) {
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
 }
 
 .content_texto {
@@ -37,18 +65,12 @@
 
 .section_title {
   color: $gray-color;
-  font-weight: $font-bold-weight
+  font-weight: $font-bold-weight;
 }
 
 @media screen and (max-width: 952px) {
   .section_container {
     margin: 1rem 0;
-  }
-
-  .content {
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
   }
 
   .content_texto {
