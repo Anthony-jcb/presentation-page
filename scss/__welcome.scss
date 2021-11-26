@@ -36,6 +36,7 @@
   }
 
   h2 {
+    font-family: $font;
     font-size: 1rem;
   }
 
@@ -69,6 +70,25 @@
   }
 
   &_name {
+    @include mixins.gradient;
+  }
+}
+
+.my_link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 8rem;
+  height: 2rem;
+  background-color: rgb(10, 10, 10);
+
+  a, button {
+    font-family: $font;
+    font-weight: $font-bold-weight;
+    font-size: 1rem;
+    border: 0;
+    text-align: center;
+    cursor: pointer;
     @include mixins.gradient;
   }
 }
