@@ -4,13 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="stylesheet" href="./css/index.css" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
-      rel="stylesheet"
-    />
     <title>aithonai</title>
   </head>
 
@@ -57,7 +51,7 @@
         <div class="welcome_main">
           <div class="welcome_main_intro">
             <h1>Hello, I'm <span class="welcome_main_name">Anthony</span></h1>
-            <h2>UI & UX Designer</h2>
+            <h2>Frontend Developer</h2>
             <p>
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil,
               quae mollitia aliquid repellendus porro totam aut, enim pariatur
@@ -66,9 +60,47 @@
               <a href="#contact">Contactame</a>
             </div>
           </div>
-          <div class="profile">
-            <img src="./css/assets/profile.png" alt="Anthony's profile" />
-          </div>
+          <picture>
+            <svg
+              class="profile"
+              width="126"
+              height="126"
+              viewBox="0 0 126 126"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <defs>
+                <linearGradient
+                  id="gradient"
+                  x1="0.621549"
+                  y1="74.1928"
+                  x2="121.563"
+                  y2="29.1108"
+                  gradientUnits="userSpaceOnUse"
+                >
+                  <stop stop-color="#1F6DB6" />
+                  <stop offset="0.604324" stop-color="#39A8D9" />
+                  <stop offset="1" stop-color="#55E7FF" />
+                </linearGradient>
+              </defs>
+              <defs>
+                <path
+                  id="blob"
+                  d="M107.082 26.1439C116.424 36.5079 122.914 48.2982 124.881 61.9901C126.848 75.682 124.291 91.1805 114.851 103.351C105.509 115.427 89.48 123.984 71.9762 125.315C54.4723 126.646 35.5918 120.751 22.3164 108.676C9.04101 96.6003 1.37078 78.3444 0.58409 59.3278C-0.300936 40.2162 5.79591 20.439 19.0713 9.97985C32.3467 -0.384174 52.8006 -1.335 69.2228 2.75356C85.5466 6.74704 97.7403 15.7799 107.082 26.1439Z"
+                />
+              </defs>
+
+              <clipPath id="clipBlob">
+                <use xlink:href="#blob"></use>
+              </clipPath>
+              <use xlink:href="#blob" fill=url(#gradient)></use>
+              <image
+                xlink:href="./css/assets/profile.png"
+                clip-path="url(#clipBlob)"
+                width="126"
+                height="136"
+              />
+            </svg>
+          </picture>
         </div>
       </section>
     </div>
