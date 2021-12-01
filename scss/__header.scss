@@ -44,15 +44,12 @@
   align-items: center;
   font-size: $default-text-size;
   font-weight: $font-regular-weight;
-  cursor: pointer;
-  border-radius: 25px;
   transition: all 0.5s;
   color: $black-color;
 }
 
 .menu a:hover {
-  box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.1);
-  transition: all 0.2s;
+  @include mixins.gradient;
 }
 
 .menu a > svg {

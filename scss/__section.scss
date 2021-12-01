@@ -70,6 +70,7 @@
 .section_title {
   color: $gray-color;
   font-weight: $font-bold-weight;
+  font-size: $title-text-size;
 
   @media screen and (max-width: $query-width) {
     text-align: center;
