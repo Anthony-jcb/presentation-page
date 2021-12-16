@@ -1,89 +1,55 @@
+.ruler {
+  min-width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
 .sections {
   @for $i from 1 through 4 {
     @if $i % 2 == 0 {
-      .section_container:nth-child(#{$i}) .content {
+      .section:nth-child(#{$i}) .container {
         flex-direction: row-reverse;
-
-        @media screen and (max-width: $query-width) {
-          flex-direction: column;
-        }
-      }
-    } @else {
-      .section_container:nth-child(#{$i}) .content {
-        flex-direction: row;
-
-        @media screen and (max-width: $query-width) {
-          flex-direction: column;
-        }
       }
     }
   }
 }
 
-.section_container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 2rem 2rem;
-  scroll-margin-top: 1.8rem;
-  font-family: $big-font;
-}
-
-.section_content {
-  max-width: 90rem;
-  line-height: 1.5;
+.section {
+  width: 100%;
+  font-family: $font;
+  line-height: 1.75rem;
+  scroll-margin-top: 34px;
   color: $black-color;
-  font-size: 18px;
-  overflow: hidden;
-}
 
-.content {
-  display: flex;
-  justify-content: center;
-  font-weight: 400;
-
-  @media screen and (max-width: $query-width) {
+  .container {
+    max-width: 1152px;
+    margin: 0 auto;
+    display: flex;
     align-items: center;
-    justify-content: center;
-    flex-direction: column;
-  }
-}
-
-.content_texto {
-  width: 50%;
-  margin-left: 1rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-
-  p {
-    font-family: $font;
-    font-size: $default-text-size;
-    max-width: 95%;
   }
 
-  @media screen and (max-width: $query-width) {
-    text-align: center;
-  }
-}
+  .info {
+    width: 50%;
+    padding: 0 3rem;
+    padding-left: 1rem;
 
-.section_title {
-  color: $gray-color;
-  font-weight: $font-bold-weight;
-  font-size: $title-text-size;
+    .title {
+      font-size: 30px;
+      font-weight: 700;
+    }
 
-  @media screen and (max-width: $query-width) {
-    text-align: center;
-  }
-}
-
-@media screen and (max-width: $query-width) {
-  .section_container {
-    margin: 1rem 0;
+    .message {
+      font-size: 18px;
+    }
   }
 
-  .content_texto {
-    width: 100%;
-    padding: 0 0;
+  .image {
+    margin: 0 3rem;
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
   }
 }

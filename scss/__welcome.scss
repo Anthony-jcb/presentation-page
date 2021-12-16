@@ -2,105 +2,98 @@
 
 .welcome {
   width: 100%;
-  height: 100vh;
-  background-position: center;
-  background-size: cover;
-  overflow: hidden;
 
   @media screen and (max-height: 630px) {
     min-height: 100vh;
-    height: 100%;
-  }
-}
-
-.welcome_content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  height: 100%;
-}
-
-.welcome_main {
-  max-width: 94rem;
-  height: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-around;
-  color: $gray-color;
-
-  @media screen and (max-width: $query-width) {
-    width: 80%;
+    height: 95%;
   }
 
-  h1 {
-    font-family: $big-font;
-    font-weight: $font-bold-weight;
-    font-size: 2.5rem;
-    width: 80%;
+  .padding {
+    padding: 0 1rem;
   }
 
-  h2 {
-    font-family: $font;
-    font-size: 1rem;
-  }
-
-  p {
-    font-family: $font;
-    font-size: 1.2rem;
-    font-weight: 400;
-  }
-
-  &_intro {
-    width: 50%;
+  .main {
+    max-width: 1152px;
+    height: 100vh;
+    padding: 0 1rem;
+    margin: 0 auto;
+    margin-bottom: 100px;
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    color: $gray-color;
 
     @media screen and (max-width: $query-width) {
-      width: 100%;
-      align-items: center;
+      width: 80%;
+    }
+
+    .intro {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+
+      .title {
+        font-family: $big-font;
+        font-weight: $font-bold-weight;
+        font-size: 2.5rem;
+        width: 80%;
+      }
+
+      .name {
+        @include mixins.gradient;
+      }
+
+      .subtitle {
+        color: $primary-color;
+        font-family: $font;
+        font-size: 1rem;
+        @include mixins.gradient;
+
+        &:before {
+          content: "< ";
+        }
+        &:after {
+          content: " >";
+        }
+      }
+
+      .message {
+        font-family: $font;
+        font-size: 1.2rem;
+        font-weight: 400;
+      }
+
+      @media screen and (max-width: $query-width) {
+        width: 100%;
+        align-items: center;
+        text-align: center;
+      }
+    }
+  }
+
+  .my_link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 8rem;
+    height: 2rem;
+    background-color: rgb(10, 10, 10);
+
+    a {
+      font-family: $font;
+      font-weight: $font-bold-weight;
+      font-size: 18px;
+      border: 0;
       text-align: center;
-    }
-
-    h2:before {
-      content: "< ";
-      color: $primary-color;
-      @include mixins.gradient;
-    }
-    h2:after {
-      content: " />";
-      color: $primary-color;
+      cursor: pointer;
       @include mixins.gradient;
     }
   }
 
-  &_name {
-    @include mixins.gradient;
+  .profile {
+    margin: 1rem 0;
+    width: 300px;
+    height: 300px;
   }
-}
-
-.my_link {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 8rem;
-  height: 2rem;
-  background-color: rgb(10, 10, 10);
-
-  a,
-  button {
-    font-family: $font;
-    font-weight: $font-bold-weight;
-    font-size: 1rem;
-    border: 0;
-    text-align: center;
-    cursor: pointer;
-    @include mixins.gradient;
-  }
-}
-
-.profile {
-  margin: 1rem 0;
-  width: 300px;
-  height: 300px;
 }
