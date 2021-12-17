@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Anthony's Cedeño presentation page, see my contact, work, projects and trayectory.",
   "main": "src/index.js",
+  "type": "module",
   "scripts": {
     "watch": "sass --watch --style=compressed --no-source-map scss:css"
   },

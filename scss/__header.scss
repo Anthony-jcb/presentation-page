@@ -2,13 +2,14 @@
 
 .header {
   width: 100%;
-  height: 35px;
+  height: 40px;
 }
 
 .padding {
   display: flex;
   justify-content: center;
   padding: 0 1rem;
+  height: 100%;
 }
 
 .menu {
@@ -42,17 +43,20 @@
   font-weight: $font-regular-weight;
   color: $black-color;
   transition: all 0.2s ease;
+}
 
-  &:hover {
-    @include mixins.gradient;
-    transform: scale(1.2);
-    transition: all 0.2s ease;
+@media screen and (min-width: $query-width) {
+  .link svg {
+    display: none;
   }
 
-  svg, img {
-    display: none;
-    margin-right: 0.3rem;
-    fill: $black-color;
+  .link:hover {
+    @include mixins.gradient;
+    animation: bump 0.2s ease-in-out;
+  }
+
+  .link:active {
+    animation: bump 0.2s ease-in-out;
   }
 }
 
@@ -71,18 +75,57 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    font-size: 6px;
   }
 
   .link {
-    padding: 0 0;
     font-size: 12px;
+    flex-direction: column;
 
-    img {
-      display: block;
+    @keyframes bump {
+      0% {
+        transform: translateY(5px);
+      }
+
+      50% {
+        transform: translateY(-3px);
+      }
+
+      100% {
+        transform: translateY(0px);
+      }
+    }
+
+    @keyframes turnBlack {
+      0% {
+        fill: $primary-color;
+        color: $primary-color;
+      }
+
+      100% {
+        fill: $black-color;
+        color: $black-color;
+      }
+    }
+
+    &:hover {
+      animation: turnBlack 1.5s ease-in-out normal forwards;
+      animation: bump 0.2s ease-in-out normal forwards;
+
+      svg {
+        animation: turnBlack 1.5s ease-in-out normal forwards;
+      }
+    }
+
+    svg {
+      width: auto;
+      height: auto;
     }
   }
 
-  a.menu_name {
+  .brand {
     display: none;
   }
 }

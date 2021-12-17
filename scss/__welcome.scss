@@ -24,10 +24,6 @@
     justify-content: space-between;
     color: $gray-color;
 
-    @media screen and (max-width: $query-width) {
-      width: 80%;
-    }
-
     .intro {
       width: 50%;
       display: flex;
@@ -92,8 +88,19 @@
   }
 
   .profile {
-    margin: 1rem 0;
-    width: 300px;
-    height: 300px;
+    @media screen and (max-width: $query-width) {
+      margin: auto auto;
+    }
+
+    svg {
+      margin: 1rem auto;
+      width: 300px;
+      height: 300px;
+
+      @media screen and (max-width: $query-width) {
+        width: 250px;
+        height: auto;
+      }
+    }
   }
 }

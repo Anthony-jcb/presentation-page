@@ -5,34 +5,43 @@
   flex-direction: column;
 }
 
-.sections {
-  @for $i from 1 through 4 {
-    @if $i % 2 == 0 {
-      .section:nth-child(#{$i}) .container {
-        flex-direction: row-reverse;
-      }
-    }
-  }
-}
-
 .section {
   width: 100%;
   font-family: $font;
   line-height: 1.75rem;
   scroll-margin-top: 34px;
+  margin-bottom: 70px;
   color: $black-color;
+
+  @media screen and (max-width: $query-width) {
+    border-bottom: 1px solid #eaeaea;
+  }
+
+  .flip {
+    flex-direction: row-reverse;
+  }
 
   .container {
     max-width: 1152px;
     margin: 0 auto;
     display: flex;
     align-items: center;
+
+    @media screen and (max-width: $query-width) {
+      flex-direction: column;
+    }
   }
 
   .info {
     width: 50%;
     padding: 0 3rem;
     padding-left: 1rem;
+
+    @media screen and (max-width: $query-width) {
+      width: auto;
+      padding: 0;
+      padding-left: 1rem;
+    }
 
     .title {
       font-size: 30px;
@@ -47,9 +56,18 @@
   .image {
     margin: 0 3rem;
 
+    @media screen and (max-width: $query-width) {
+      margin: 0 1rem;
+    }
+
     img {
       max-width: 100%;
       height: auto;
+      border-radius: 14px;
+
+      @media screen and (max-width: $query-width) {
+        border-radius: 5px;
+      }
     }
   }
 }
