@@ -12,6 +12,7 @@ export default function scrollTop(input) {
 
   D.onclick = e => {
     if (e.target.matches(input) || e.target.matches(`${input} *`)) {
+      W.history.pushState("", document.title, window.location.pathname)
       W.scrollTo({ top: 0, behavior: "smooth" })
     }
   }

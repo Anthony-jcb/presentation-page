@@ -13,6 +13,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  -webkit-tap-highlight-color: transparent;
   box-shadow: 0 6px 10px transparentize($color: $primary-color, $amount: 0.8);
   transition: all 0.5s ease-in-out;
 
