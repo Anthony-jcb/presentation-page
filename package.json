@@ -5,7 +5,7 @@
   "main": "src/index.js",
   "type": "module",
   "scripts": {
-    "watch": "sass --watch --style=compressed --no-source-map scss:css"
+    "sass": "sass --watch --style=compressed --no-source-map scss:css"
   },
   "keywords": [
     "contact",
