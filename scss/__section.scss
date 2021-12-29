@@ -38,7 +38,7 @@
     padding-left: 1rem;
 
     @media screen and (max-width: $query-width) {
-      width: auto;
+      width: calc(100% - 1rem);
       padding: 0;
       padding-left: 1rem;
     }
