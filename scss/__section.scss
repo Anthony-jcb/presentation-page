@@ -16,19 +16,24 @@
   @media screen and (max-width: $query-width) {
     border-bottom: 1px solid #eaeaea;
   }
-
-  .flip {
-    flex-direction: row-reverse;
-  }
-
+  
   .container {
     max-width: 1152px;
     margin: 0 auto;
     display: flex;
+    flex-direction: row-reverse;
     align-items: center;
+
+    &.flip {
+      flex-direction: row;
+    }
 
     @media screen and (max-width: $query-width) {
       flex-direction: column;
+
+      &.flip {
+        flex-direction: column;
+      }
     }
   }
 
@@ -38,9 +43,9 @@
     padding-left: 1rem;
 
     @media screen and (max-width: $query-width) {
-      width: calc(100% - 1rem);
+      width: calc(100% - 2rem);
+      margin: 0 1rem;
       padding: 0;
-      padding-left: 1rem;
     }
 
     .title {
