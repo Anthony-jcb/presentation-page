@@ -74,7 +74,10 @@
     justify-content: center;
     width: 8rem;
     height: 2rem;
-    background-color: rgb(10, 10, 10);
+    border-radius: 8px;
+    background-color: transparentize($color: $primary-color, $amount: 0.85);
+    text-shadow: 0 0 20px transparentize($color: $primary-color, $amount: 0.20);
+    overflow: hidden;
 
     a {
       font-family: $font;

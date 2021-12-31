@@ -55,6 +55,13 @@
 
     .message {
       font-size: 18px;
+
+      span {
+        color: $primary-color;
+        background-color: transparentize($color: $primary-color, $amount: 0.95);
+        border-radius: 5px;
+        padding: 0 4px;
+      }
     }
   }
 

@@ -25,6 +25,8 @@
 .fill {
   display: block;
   height: 2px;
+  border-radius: 2px;
+  box-shadow: 0 2px 6px transparentize($color: $primary-color, $amount: 0.80);
   @include mixins.linear-gradient-background($primary-color);
 }
 
